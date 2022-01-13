@@ -7,8 +7,6 @@ import random
 
 import PIL, PIL.ImageOps, PIL.ImageEnhance, PIL.ImageDraw
 import numpy as np
-import torch
-from PIL import Image
 
 
 def AutoContrast(img, _):

@@ -5,10 +5,9 @@ import random
 import warnings
 import numpy as np
 import torch
-import torch.nn as nn
 import torch.nn.parallel
 import torch.backends.cudnn as cudnn
-from multi_head  import Multi_Head 
+from multi_head import Multi_Head 
 from dataset import SSL_Dataset,get_data_loader
 
 def get_SGD(net, name='SGD', lr=0.1, momentum=0.9, weight_decay=5e-4, nesterov=True, bn_wd_skip=True):

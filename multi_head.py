@@ -1,9 +1,5 @@
 import torch
-from torch.autograd import Variable
-import numpy as np
-import torch.nn as nn
 import torch.nn.functional as F
-import torchvision.models as models
 from torch.cuda.amp import autocast, GradScaler
 import os
 

@@ -1,19 +1,13 @@
-import torch.distributed as dist
-from torch.utils.data import sampler, DataLoader
-from torchvision import datasets, transforms
-from torch.utils.data import Dataset
+from torch.utils.data import sampler, DataLoader, Dataset
 from randaugment import RandAugment
-from cutout import Cutout
 from PIL import Image
 import numpy as np
 import copy
-import numpy as np
 import torch
-from torch.utils.data import Dataset, DataLoader
 from torch.utils.data.sampler import BatchSampler
 from randaugment import RandAugment
 import torchvision
-from torchvision import datasets, transforms
+from torchvision import transforms
 
 
 def split_ssl_data(data, target, num_labels, num_classes, index=None, include_lb_to_ulb=True):
