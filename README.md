@@ -1,6 +1,7 @@
 # Semi-Supervised Learning with Multi-Head Co-Training (PyTorch)
-
-<img src="src/diagram.png">
+<p align="center">
+<img src="src/diagram.png" width="500">
+</p>
 
 
 ## Experiments
@@ -11,6 +12,22 @@ Then run the train.py, such as
 ```
 $ python train.py --num_labels 4000 --save_name cifar10_4000 --dataset cifar10 --overwrite --data_dir path-to-your-data
 ```
+
+## Requirements
+
+- Python >= 3.6
+- PyTorch >= 1.6
+- CUDA
+- Numpy
+
+### Results on CIFAR-10
+- Test Accuracy(%) on CIFAR10
+
+|\# labels         |250    |1000    |4000    |
+|-------------------|-------|-------|-------|
+|Multi-Head Co-Training   |4.98±0.30  | 4.74±0.16 |3.84±0.09  |
+  
+
 ## Reference
 Part of codes in this repository are modified from:
 * ["https://github.com/google-research/fixmatch"](https://github.com/google-research/fixmatch),
