@@ -1,4 +1,4 @@
-# Semi-Supervised Learning with Multi-Head Co-Training (PyTorch)
+# Multi-Head Co-Training (PyTorch)
 <p align="center">
 <img src="src/diagram.png" width="500">
 </p>
@@ -20,13 +20,19 @@ $ python train.py --num_labels 4000 --save_name cifar10_4000 --dataset cifar10 -
 - CUDA
 - Numpy
 
-### Results on CIFAR-10
+### Results on semi-supervised learning benchmarks
 - Test Accuracy(%) on CIFAR10
 
 |\# labels         |250    |1000    |4000    |
 |-------------------|-------|-------|-------|
 |Multi-Head Co-Training   |4.98±0.30  | 4.74±0.16 |3.84±0.09  |
   
+### Results on open-set semi-supervised learning benchmarks
+- Test Accuracy(%) on CIFAR10 with only 60% know classes
+
+|\# labels         |50    |100    |400    |
+|-------------------|-------|-------|-------|
+|Multi-Head Co-Training   |5.8±0.9  | 5.3±0.9 |4.4±0.9  |
 
 ## Reference
 Part of codes in this repository are modified from:
